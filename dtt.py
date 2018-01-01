@@ -9,7 +9,7 @@ import configparser
 config = configparser.ConfigParser()
 config.read('config.ini')
 sd_length=config['DEFAULT']['SUB_DOMAIN_LENGTH']
-print sd_length
+
 
 if len(sys.argv) < 2:
     sys.exit('Usage: %s pcap-file' % sys.argv[0])
